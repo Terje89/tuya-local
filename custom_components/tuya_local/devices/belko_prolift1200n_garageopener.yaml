@@ -3,6 +3,9 @@ products:
   - id: rxjnauytlvlczvcq
     manufacturer: Belko
     model: ProLift 1200N
+  - id: qxs8hcixJWb0pjht
+    manufacturer: Boxer
+    model: 4000 Premium
 entities:
   - entity: cover
     class: garage
@@ -37,3 +40,11 @@ entities:
       - id: 104
         type: integer
         name: current_position
+      - id: 104
+        type: integer
+        name: action
+        mapping:
+          - dps_val: null
+          - dps_val: 0
+            value: closed
+          - value: opened
